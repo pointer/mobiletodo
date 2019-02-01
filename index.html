@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daybook Todo</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.2.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- Home Page -->
+    <div data-role="page" id="page_login">
+        <header data-role="header">
+            <!--    <a href="index.html" id="cancel_btn" data-icon="delete">Cancel</a> -->
+            <h1>Login</h1>
+        </header>
+        <main data-role="content" id="content">
+            <form id="login_form">
+                <input type="text" name="page_login_name" id="page_login_name" placeholder="Username" />
+                <input type="password" name="page_login_pass" id="page_login_pass" placeholder="Password" />
+            </form>
+        </main>
+        <fieldset>
+            <div><button type="button" data-theme="b" id="page_login_submit">Login</button></div>
+        </fieldset>
+    </div>
+    <!-- /content -->
+
+    <footer data-role="footer" id="footer">
+        <h4>Mobile Daybbok Todo &copy; 2018</h4>
+    </footer>
+
+    <!-- View Page -->
+    <div data-role="page" id="view">
+        <header data-role="header">
+            <a href="index.html" id="cancel_btn" data-icon="delete">Cancel</a>
+            <h1>Activité</h1>
+            <!--<a href="index.html" data-icon="check" data-theme="b" onclick="$('#add_form').submit();">Save</a> -->
+        </header>
+
+        <main data-role="content" id="view_content">
+            <form id="view_form">
+                <ul id="todos" data-role="listview" data-filter="true" data-filter-placeholder="Chercher Todos..." data-inset="true">
+                </ul>
+            </form>
+
+        </main>
+        <footer data-role="footer" id="footer">
+            <h4>Mobile Daybbok Todo &copy; 2018</h4>
+        </footer>
+    </div>
+    <!--Edit Page -->
+    <div data-role="page" id="edit">
+        <header data-role="header">
+            <a href="index.html" id="cancel_btn" data-icon="delete">Cancel</a>
+            <h1>Editer Todo</h1>
+            <a href="index.html" data-icon="check" data-theme="b" onclick="$('#edit_form').submit();">Save</a>
+        </header>
+
+        <main data-role="content" id="content">
+            <form id='edit_form'>
+            </form>
+
+        </main>
+
+        <footer data-role="footer" id="footer">
+            <h4>Mobile Daybook Todo &copy; 2018</h4>
+        </footer>
+    </div>
+</body>
+
+</html>
+<!--
+<input type=\"image\" data-file_name=\"" + result.fileName + "\" />
+<input type="image" data-filename="@FileName" />
+-->
